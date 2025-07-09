@@ -11,6 +11,7 @@ import {
 } from 'react-native'; // Import React Native components for UI
 
 
+
 // Define the layout of calculator buttons
 const buttons = [
 
@@ -66,6 +67,9 @@ const App = () => {
     <SafeAreaView style={styles.container}>
       {/* Display the input and result */}
       <View style={styles.resultContainer}>
+        <Text style={{ color: "white", fontSize: 40, fontStyle:'italic', justifyContent:'center', textAlign: 'center', fontWeight: "bold", marginTop: 9, marginBottom: 50 }}>
+          Calculator Pro
+        </Text>
         <Text style={styles.inputText}>{input + "  "}</Text> {/* Show the current input */}
         <Text style={styles.resultText}>{result + " "}</Text> {/* Show the calculated result */}
       </View>
@@ -86,6 +90,7 @@ const App = () => {
                   btn === '-' ? { backgroundColor: 'teal'  } : null, // teal color for '-' button
                   btn === '*' ? { backgroundColor: 'teal'  } : null, // teal color for '*' button
                   btn === '=' ? { backgroundColor: 'darkgreen' } : null, // green color for '=' button
+                  
 
 
 
