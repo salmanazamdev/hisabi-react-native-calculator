@@ -51,7 +51,7 @@ const App = () => {
       setInput('');
       setResult('');
     } else if (btn === '=') {
-      // Do nothing since the result is calculated automatically
+      // Do nothing since the result is~ calculated automatically
     } else if (btn === '+/-') {
       // Toggle the sign of the input
       if (input.startsWith('-')) setInput(input.substring(1));
@@ -79,11 +79,20 @@ const App = () => {
                 key={colIndex}
                 style={[
                   styles.button,
-                  btn === '=' ? styles.equalsButton : null, // Apply special style for '=' button
+
+                  btn === 'C' ? { backgroundColor: 'maroon' } : null, // darkcoral color for 'C' button
+                  btn === '/' ? { backgroundColor: 'teal'  } : null, // teal color for '/' button
+                  btn === '+' ? { backgroundColor: 'teal'  } : null, // teal color for '+' button
+                  btn === '-' ? { backgroundColor: 'teal'  } : null, // teal color for '-' button
+                  btn === '*' ? { backgroundColor: 'teal'  } : null, // teal color for '*' button
+                  btn === '=' ? { backgroundColor: 'darkgreen' } : null, // green color for '=' button
+
+
+
                 ]}
                 onPress={() => handlePress(btn)} // Handle button press
               >
-                <Text style={[styles.buttonText, btn === '=' && { fontSize: 28 }]}>
+                <Text style={[styles.buttonText, btn === '=' && { fontSize: 29 }]}>
                   {btn} {/* Display the button label */}
                 </Text>
               </TouchableOpacity>
@@ -133,10 +142,7 @@ const styles = StyleSheet.create({
     height: 70, // Set button height
     borderRadius: 35, // Make buttons circular
   },
-  equalsButton: {
-    backgroundColor: '#1FD660', // Green background for '=' button
-    flex: 2, // Make '=' button wider
-  },
+ 
   buttonText: {
     fontSize: 24, // Default font size for button text
     color: '#fff', // White text color
