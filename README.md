@@ -1,50 +1,102 @@
-# Welcome to your Expo app 👋
+# 🧮 Hisabi – A Basic React Native Calculator
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to **Hisabi** — a beginner-friendly React Native calculator built using **Expo**.  
+It lets you perform basic arithmetic operations like add, subtract, multiply, and divide — with a clean layout and colorful buttons 🎨
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Getting Started
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Clone the repo and install the dependencies:
 
 ```bash
-npm run reset-project
+npm install
+````
+
+Start the development server:
+
+```bash
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Scan the QR code in the terminal with **Expo Go** (Android/iOS) to test the app instantly 📱
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📁 Folder Structure
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```
+project-root/
+├── app/                # Contains layout.tsx (main logic)
+├── assets/             # App assets (icons, fonts, etc.)
+├── .expo/              # Expo metadata
+├── node_modules/       # Installed dependencies
+├── README.md           # This file
+├── app.config.js       # Expo config
+└── package.json        # Dependencies and scripts
+```
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## ✨ Features
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* 🧠 Interactive number input
+* ➕ ➖ ✖️ ➗ Basic operations aligned like a mobile calculator
+* 🎨 Color-coded buttons
+* 🔄 Clear layout and expandable logic
+
+---
+
+## 🔧 Tech Stack
+
+* ⚛️ React Native (via Expo)
+* 🧪 TypeScript (optional if you add later)
+* 📦 Expo CLI for development and preview
+
+---
+
+## 🤓 How to Use
+
+1. Tap numbers and operations to build your expression
+2. Press `=` to calculate
+3. Output is shown on top
+4. Want to restart? Add a clear (C/AC) button and logic!
+
+---
+
+## 🛠️ Future Enhancements
+
+* Add decimals (.)
+* Add backspace
+* Add history log
+* Add dark/light theme toggle 🌗
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this project and make it better!
+
+```bash
+git checkout -b feature/your-awesome-feature
+git commit -m "Add cool new feature"
+git push origin feature/your-awesome-feature
+```
+
+Open a Pull Request and let’s build together 🚀
+
+---
+
+## 📬 Contact
+
+👤 **M Salman Azam**
+🔗 [LinkedIn](https://www.linkedin.com/in/salmanazamdev)
+🔗 [GitHub](https://github.com/salmanazamdev)
+
+---
+
+## ⭐ Show Some Love
+
+If you like this project, give it a ⭐ and share it with your dev buddies!
+
+---
